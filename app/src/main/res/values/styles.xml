@@ -50,6 +50,13 @@
         <item name="android:textSize">24dp</item>
     </style>
 
+    <!-- Font for "Add Term" button in the term list fragment. -->
+    <style name="FontBase.AddTermFont">
+        <item name="android:fontFamily">"sans-serif-medium"</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
     <!-- Font for unselected term elements in the term list fragment. -->
     <style name="FontBase.TermListUnselectedFont">
         <item name="android:fontFamily">"sans-serif-medium"</item>
@@ -63,4 +70,8 @@
         <item name="android:textColor">#ffffff</item>
     </style>
 
+    <style name="AddTermButton" parent="@android:style/Widget.Button">
+        <item name="android:radius">17.41dp</item>
+        <item name="android:textAppearance">@style/FontBase.AddTermFont</item>
+    </style>
 </resources>
