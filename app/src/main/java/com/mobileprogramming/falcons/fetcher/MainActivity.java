@@ -34,12 +34,11 @@ public class MainActivity extends AppCompatActivity {
         addNotification();
     }
     private void addNotification() {
-
         NotificationCompat.Builder builder =
                 (NotificationCompat.Builder) new NotificationCompat.Builder(this)
                         .setSmallIcon(R.mipmap.ic_launcher)
-                        .setContentTitle("Notifications Example")
-                        .setContentText("This is a test notification");
+                        .setContentTitle("Your Daily Fetcher Report is Ready to be Used!")
+                        .setContentText("Click Here to View");
 
         Intent notificationIntent = new Intent(this, MainActivity.class);
         PendingIntent contentIntent = PendingIntent.getActivity(this, 0, notificationIntent,
