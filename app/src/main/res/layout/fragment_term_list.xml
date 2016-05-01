@@ -15,7 +15,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Add Term"
-            android:id="@+id/btnAddTerm" />
+            android:id="@+id/btnAddTerm"
+            android:background="@drawable/add_term_button_shape"
+            android:textAppearance="@style/FontBase.AddTermFont"
+            android:textAlignment="center"
+            android:textColor="@drawable/add_term_button_text_color" />
 
         <LinearLayout
             android:orientation="vertical"

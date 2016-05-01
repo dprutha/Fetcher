@@ -3,8 +3,15 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
     <color name="fetcherYellow">#ffae07</color>
     <color name="textGray">#8e9093</color>
+    <color name="textPressed">#ffffff</color>
+    <color name="textFocused">#ffffff</color>
     <color name="dividerGray">#cccecf</color>
     <color name="backgroundGray">#eceded</color>
+
+    <color name="buttonNormalBackground">#ffffff</color>
+    <color name="buttonPressedBackground">@color/fetcherYellow</color>
+    <color name="buttonFocusedBackground">@color/fetcherYellow</color>
 </resources>
