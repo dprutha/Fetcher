@@ -16,5 +16,6 @@
     <color name="buttonFocusedBackground">@color/fetcherYellow</color>
 
     <!-- First byte is alpha transparency. -->
-    <color name="dropShadow">#cc000000</color>
+    <color name="dropShadow">#33000000</color>
+    <color name="clear">#00000000</color>
 </resources>

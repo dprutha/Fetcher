@@ -8,7 +8,11 @@
             <!-- Shadow goes first... -->
             <item android:top="2dp">
                 <shape>
-                    <solid android:color="@color/dropShadow"/>
+                    <gradient
+                        android:startColor="@color/dropShadow"
+                        android:endColor="@color/clear"
+                        android:angle="45">
+                    </gradient>
                     <corners android:radius="0dp"/>
                     <padding
                         android:left="0dp"
@@ -20,7 +24,11 @@
             <!-- Then the button. -->
             <item android:bottom="2dp" android:left="3dp">
                 <shape>
-                    <solid android:color="@color/buttonPressedBackground"/>
+                    <gradient
+                        android:startColor="@color/dropShadow"
+                        android:endColor="@color/clear"
+                        android:angle="45">
+                    </gradient>
                     <corners android:radius="0dp"/>
                     <padding
                         android:left="18dp"
@@ -38,7 +46,11 @@
             <!-- Shadow goes first... -->
             <item android:top="2dp">
                 <shape>
-                    <solid android:color="@color/dropShadow"/>
+                    <gradient
+                        android:startColor="@color/dropShadow"
+                        android:endColor="@color/clear"
+                        android:angle="45">
+                    </gradient>
                     <corners android:radius="0dp"/>
                     <padding
                         android:left="0dp"
