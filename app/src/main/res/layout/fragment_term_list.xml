@@ -25,7 +25,18 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/llTermList"></LinearLayout>
+            android:id="@+id/llTermList">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Example Term"
+                android:id="@+id/button"
+                android:textAlignment="center"
+                android:textAppearance="@style/FontBase.TermListUnselectedFont"
+                android:textColor="@drawable/term_button_text_color"
+                android:background="@drawable/term_button_shape" />
+        </LinearLayout>
     </LinearLayout>
 
 </FrameLayout>

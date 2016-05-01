@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <!-- Font color data for the "Add Term" button. -->
+    <!-- Font color data for a term in the term list. -->
     <!-- Pressed state... -->
     <item android:state_pressed="true" android:color="@color/textPressed"/>
 
