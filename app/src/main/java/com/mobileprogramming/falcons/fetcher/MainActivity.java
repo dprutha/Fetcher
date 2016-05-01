@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         NotificationCompat.Builder builder =
                 (NotificationCompat.Builder) new NotificationCompat.Builder(this)
                         .setSmallIcon(R.mipmap.ic_launcher)
-                        .setContentTitle("Your Daily Fetcher Report is Ready to be Used!")
+                        .setContentTitle("Your Daily Fetcher Report is Ready!")
                         .setContentText("Click Here to View");
 
         Intent notificationIntent = new Intent(this, MainActivity.class);
