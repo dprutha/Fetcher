@@ -31,8 +31,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //Alarm Function????
+
         addNotification();
+
     }
+
+    //Function for Adding Notification
+    //Launches Notification with Fetcher Logo and preset Messages
+    //Need to figure out how to delete notification
+    //Figure out how to redirect to application
+    //Could redirect and then delete notification on redirect
     private void addNotification() {
         NotificationCompat.Builder builder =
                 (NotificationCompat.Builder) new NotificationCompat.Builder(this)
@@ -50,7 +59,8 @@ public class MainActivity extends AppCompatActivity {
         manager.notify(0, builder.build());
     }
 
-    // Remove notification
+    //Function for Removing notification
+    //Figure out when to call this
     private void removeNotification() {
         NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         manager.cancel(0);
