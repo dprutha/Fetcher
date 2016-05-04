@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Drawing data for a term in the term list. -->
+    <!-- Pressed state... -->
+    <item android:state_pressed="true">
+        <!-- Layer this so we can put a shadow underneath. -->
+        <layer-list>
+            <!-- Shadow goes first... -->
+            <item android:top="2dp">
+                <shape>
+                    <gradient
+                        android:startColor="@color/dropShadow"
+                        android:endColor="@color/clear"
+                        android:angle="45">
+                    </gradient>
+                    <corners android:radius="0dp"/>
+                    <padding
+                        android:left="0dp"
+                        android:top="0dp"
+                        android:right="0dp"
+                        android:bottom="1dp"/>
+                </shape>
+            </item>
+            <!-- Then the button. -->
+            <item android:bottom="2dp" android:left="3dp">
+                <shape>
+                    <gradient
+                        android:startColor="@color/dropShadow"
+                        android:endColor="@color/clear"
+                        android:angle="45">
+                    </gradient>
+                    <corners android:radius="0dp"/>
+                    <padding
+                        android:left="18dp"
+                        android:top="18dp"
+                        android:right="18dp"
+                        android:bottom="18dp"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <!-- Focused state... -->
+    <item android:state_focused="true">
+        <layer-list>
+            <!-- Shadow goes first... -->
+            <item android:top="2dp">
+                <shape>
+                    <gradient
+                        android:startColor="@color/dropShadow"
+                        android:endColor="@color/clear"
+                        android:angle="45">
+                    </gradient>
+                    <corners android:radius="0dp"/>
+                    <padding
+                        android:left="0dp"
+                        android:top="0dp"
+                        android:right="0dp"
+                        android:bottom="1dp"/>
+                </shape>
+            </item>
+            <!-- Then the button. -->
+            <item android:bottom="2dp" android:left="3dp">
+                <shape>
+                    <solid android:color="@color/buttonFocusedBackground"/>
+                    <corners android:radius="0dp"/>
+                    <padding
+                        android:left="18dp"
+                        android:top="18dp"
+                        android:right="18dp"
+                        android:bottom="18dp"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <!-- Default state. -->
+    <item>
+        <layer-list>
+            <!-- Shadow goes first... -->
+            <item android:top="2dp">
+                <shape>
+                    <solid android:color="@color/dropShadow"/>
+                    <corners android:radius="0dp"/>
+                    <padding
+                        android:left="0dp"
+                        android:top="0dp"
+                        android:right="0dp"
+                        android:bottom="1dp"/>
+                </shape>
+            </item>
+            <!-- Then the button. -->
+            <item android:bottom="2dp" android:left="3dp">
+                <shape>
+                    <solid android:color="@color/buttonNormalBackground"/>
+                    <corners android:radius="0dp"/>
+                    <padding
+                        android:left="18dp"
+                        android:top="18dp"
+                        android:right="18dp"
+                        android:bottom="18dp"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>
