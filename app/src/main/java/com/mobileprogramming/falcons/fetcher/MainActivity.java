@@ -55,11 +55,12 @@ public class MainActivity extends AppCompatActivity {
         calendar.set(Calendar.HOUR_OF_DAY, 14);
 
         //broadcast setup
-        AlarmManager mgr=(AlarmManager) getSystemService(Context.ALARM_SERVICE);
-        PendingIntent alarmIntent = PendingIntent.getBroadcast( this, 0, new Intent("com.example.filterMe"),0);
+        AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
+        PendingIntent broadcastIntent = PendingIntent.getBroadcast( this, 0, new Intent("com.example.filterMe"),0);
 
         //Alarm manager is set to wake the device up at the set calendar time (2pm right now) and repeat once a day at the same time.
-        mgr.setInexactRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), AlarmManager.INTERVAL_DAY, alarmIntent);
+        //using setInexact and RTC formats, so notification will be very low priority. Discuss later
+        alarmManager.setInexactRepeating(AlarmManager.RTC, calendar.getTimeInMillis(), AlarmManager.INTERVAL_DAY, broadcastIntent);
 
     }
 
