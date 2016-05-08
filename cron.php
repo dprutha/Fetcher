@@ -143,6 +143,16 @@ Removing several cron jobs
 $cron_regex = array('/0 0 1 \* \* /','/home\/path\/to\/command\/the_command\.sh\/');
 $crontab->remove_cronjob($cron_regex);
 
+Example call to set alarm for every day at 10am
+0 10 * * * home/path/to/command/the_command.sh
+
+When user changes the alarm: set new one, delete old one
+Change alarm from 10 to 9,
+$cron_regex = '/home\/path\/to\/command\/the_command\.sh\/';
+$crontab->remove_cronjob($cron_regex);
+0 9 * * * home/path/to/command/the_new_command.sh
+
+
 //Reference
 http://code.tutsplus.com/tutorials/managing-cron-jobs-with-php--net-19428
 **/
