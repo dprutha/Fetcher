@@ -1,0 +1,60 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mobileprogramming.falcons.fetcher.TermDetailsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/FontBase.TermTitleFont"
+            android:text="Term Title"
+            android:id="@+id/tvTermTitle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/FontBase.HeaderFont"
+            android:text="What Is It?"
+            android:id="@+id/tvWhatIsIt"
+            android:textIsSelectable="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What Is It detail text here."
+            android:id="@+id/tvWhatIsItDetail"
+            android:textAppearance="@style/FontBase.BodyFont" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- Quote Source"
+            android:id="@+id/tvWhatIsItQuoteSource"
+            android:textAppearance="@style/FontBase.QuoteSourceFont" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/FontBase.HeaderFont"
+            android:text="Article Title"
+            android:id="@+id/tvArticleTitle"
+            android:textIsSelectable="false" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Article detail text here."
+            android:id="@+id/tvArticleDetail"
+            android:textAppearance="@style/FontBase.BodyFont" />
+
+    </LinearLayout>
+
+</FrameLayout>

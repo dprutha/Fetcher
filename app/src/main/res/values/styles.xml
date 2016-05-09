@@ -17,4 +17,66 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="FetcherActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/fetcherYellow</item>
+        <!-- Also need to set:
+            * Text color
+            * Divider color
+            * Fragment background color
+         -->
+    </style>
+
+    <style name="FontBase" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/textGray</item>
+        <item name="android:fontFamily">"sans-serif"</item>
+    </style>
+
+    <!-- Font for body text in the term details fragment. -->
+    <style name="FontBase.BodyFont">
+        <item name="android:textSize">13dp</item>
+    </style>
+
+    <!-- Font for quotation source in the term details fragment. -->
+    <style name="FontBase.QuoteSourceFont">
+        <item name="android:textSize">11dp</item>
+        <item name="android:textStyle">bold|italic</item>
+    </style>
+
+    <!-- Font for headers in the term details fragment. -->
+    <style name="FontBase.HeaderFont">
+        <item name="android:fontFamily">"sans-serif-black"</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <!-- Font for term title in the term details fragment. -->
+    <style name="FontBase.TermTitleFont">
+        <item name="android:fontFamily">"sans-serif-black"</item>
+        <item name="android:textSize">24dp</item>
+    </style>
+
+    <!-- Font for "Add Term" button in the term list fragment. -->
+    <style name="FontBase.AddTermFont">
+        <item name="android:fontFamily">"sans-serif-medium"</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <!-- Font for unselected term elements in the term list fragment. -->
+    <style name="FontBase.TermListUnselectedFont">
+        <item name="android:fontFamily">"sans-serif-medium"</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <!-- Font for selected term elements in the term list fragment. -->
+    <style name="FontBase.TermListSelectedFont">
+        <item name="android:fontFamily">"sans-serif-black"</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="AddTermButton" parent="@android:style/Widget.Button">
+        <item name="android:radius">17.41dp</item>
+        <item name="android:textAppearance">@style/FontBase.AddTermFont</item>
+    </style>
 </resources>
