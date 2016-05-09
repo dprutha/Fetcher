@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Fetcher</string>
+    <!-- This should be the server's sender ID, not its authentication ID. -->
+    <string name="server_id">61930378125</string>
 </resources>

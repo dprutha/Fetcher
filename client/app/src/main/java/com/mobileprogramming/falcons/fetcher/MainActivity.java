@@ -18,6 +18,7 @@ import android.os.Bundle;
 
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.NotificationCompat;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -25,14 +26,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.Calendar;
 
-import static java.lang.System.currentTimeMillis;
-
 
 public class MainActivity extends AppCompatActivity {
+    static final String kTagMainActivity = "MainActivity";
+    private boolean googlePlayReady = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,6 +62,10 @@ public class MainActivity extends AppCompatActivity {
         //using setInexact and RTC formats, so notification will be very low priority. Discuss later
         alarmManager.setInexactRepeating(AlarmManager.RTC, calendar.getTimeInMillis(), AlarmManager.INTERVAL_DAY, broadcastIntent);
 
+        //Setup push notifications.
+        //Ask registration service to set us up.
+        Intent intent = new Intent(this, PushNotificationRegistrationService.class);
+        startService(intent);
     }
 
     //Function for Adding Notification
