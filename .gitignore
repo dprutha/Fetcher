@@ -7,3 +7,7 @@
 /build
 /captures
 **/*.orig
+**/app/build/intermediates/*
+**/.idea/libraries/*
+**/app/build/generated/*
+*/app/build/outputs/*
