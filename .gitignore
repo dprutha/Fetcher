@@ -11,3 +11,5 @@
 **/.idea/libraries/*
 **/app/build/generated/*
 */app/build/outputs/*
+**/build/intermediates/*
+**/local.properties
