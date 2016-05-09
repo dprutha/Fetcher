@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "61930378125",
+    "project_id": "fetcher-50fd9"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:61930378125:android:c437d4b722d3bb93",
+        "android_client_info": {
+          "package_name": "com.mobileprogramming.falcons.fetcher"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5ijrep-N-_LbZtfK6cpiUHjpE01o16xw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
